@@ -30,11 +30,11 @@ def add_product():
     db.session.add(resume)
     db.session.commit()
 
-    global repositories
-    id_last = repositories[-1]['id']
-    id_new = id_last + 1
-    data['id'] = id_new
-    repositories.append(data)
+    #global repositories
+    #id_last = repositories[-1]['id']
+    #id_new = id_last + 1
+    #data['id'] = id_new
+    #repositories.append(data)
 
     return 'OK'
 
