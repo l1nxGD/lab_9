@@ -3,7 +3,7 @@ document.getElementById('clear-button').addEventListener('click', function() {
 });
 
 
-function addProduct() {
+function addRepository() {
     let title = document.getElementById('title').value
     let link = document.getElementById('link').value
     fetch('/add', {
@@ -13,7 +13,7 @@ function addProduct() {
                              'link': link})
     })
 
-function addProduct() {
+function clearAll() {
     fetch('/clear', {method: 'post'}).then(response => response.json()).then(data => {
         const ProjectsList = document.getElementById('id');
         ProjectsList.innerHTML = '';
